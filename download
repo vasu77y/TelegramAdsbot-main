@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.db
+*.db.backup_*
+temp_files/
+bot.log
+.env
