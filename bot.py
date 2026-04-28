@@ -15,7 +15,7 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S"
 )
-logger = logging.getLogger("SkullAdsBot")
+logger = logging.getLogger("kaixadsbot")
 
 # ── Event Loop Fix ────────────────────────────────────
 try:
@@ -89,7 +89,7 @@ if _missing:
     logger.critical(f"Missing required environment variables: {', '.join(_missing)}")
     sys.exit(1)
 
-BOT_USERNAME = "SkullAdsBot"
+BOT_USERNAME = "unrealaura"
 BOT_VERSION = "3.0"
 BOT_START_TIME = time.time()
 
@@ -600,7 +600,7 @@ async def check_access(user_id: int, msg_or_query) -> bool:
             "💀 <b>Access Denied!</b>\n\n"
             "┌─────────────────────\n"
             "│ 🚫 You are <b>permanently banned</b>.\n"
-            "│ Contact @skullmodder for support.\n"
+            "│ Contact @unrealaura for support.\n"
             "└─────────────────────"
         )
         try:
@@ -619,7 +619,7 @@ async def check_access(user_id: int, msg_or_query) -> bool:
             "┌─────────────────────\n"
             "│ ⚙️ Bot is being upgraded.\n"
             "│ Please try again later.\n"
-            "│ Contact @skullmodder for info.\n"
+            "│ Contact @unrealaura for info.\n"
             "└─────────────────────"
         )
         try:
@@ -642,7 +642,7 @@ async def check_access(user_id: int, msg_or_query) -> bool:
                     "💀 <b>Access Restricted!</b>\n\n"
                     "┌─────────────────────\n"
                     f"│ 🚫 You are banned in our channel.\n"
-                    f"│ Contact @skullmodder for help.\n"
+                    f"│ Contact @unrealaura for help.\n"
                     "└─────────────────────"
                 )
                 try:
@@ -921,7 +921,7 @@ async def how_to_use_cb(client, query: CallbackQuery):
         "│ /help — Show this guide\n"
         "│ /referral — Your referral link\n"
         "└─────────────────────\n\n"
-        "👨‍💻 <b>Help:</b> @skullmodder | @botsarefather"
+        "👨‍💻 <b>Help:</b> @unrealaura | "
     )
     await safe_edit(
         query.message, text,
@@ -956,7 +956,7 @@ async def my_referral_cb(client, query: CallbackQuery):
         InlineKeyboardMarkup([
             [InlineKeyboardButton("📤 Share Link", url=(
                 f"https://t.me/share/url?url={ref_link}"
-                f"&text=Join+Skull+Ads+Bot+for+free!"
+                f"&text=Join+kai+Ads+Bot+for+free!"
             ))],
             [InlineKeyboardButton("🔙 Back", callback_data="back_start")]
         ])
@@ -1030,12 +1030,12 @@ async def show_plans_cb(client, query: CallbackQuery):
 
     markup = InlineKeyboardMarkup([
         [InlineKeyboardButton(
-            "💬 Buy — @skullmodder",
-            url="https://t.me/itsukiarai"
+            "💬 Buy — @unrealaura",
+            url="https://t.me/unrealaura"
         )],
         [InlineKeyboardButton(
             "🤖 Owner",
-            url="https://t.me/itsukiarai"
+            url="https://t.me/unrealaura"
         )],
         [InlineKeyboardButton("🔙 Back", callback_data="back_start")]
     ])
@@ -1371,8 +1371,8 @@ async def login_btn(client, query: CallbackQuery):
         )
         markup = InlineKeyboardMarkup([
             [InlineKeyboardButton(
-                "💎 Buy Premium — @skullmodder",
-                url="https://t.me/skullmodder"
+                "💎 Buy Premium — @unrealaura",
+                url="https://t.me/unrealaura"
             )],
             [InlineKeyboardButton("🔙 Back", callback_data="accounts_menu")]
         ])
@@ -1441,12 +1441,12 @@ async def finish_login(message: Message, tc, u_id: int, phone: str):
         try:
             new_name = old_name
             if old_name and "SkullAdsBot" not in old_name:
-                new_name = f"{old_name} | @SkullAdsBot ☠️"
+                new_name = f"{old_name} | @kaixadsbot ✨"
             elif not old_name:
-                new_name = "@SkullAdsBot ☠️"
+                new_name = "@kaixadsbot ✨"
             await tc.update_profile(
                 first_name=new_name,
-                bio="💀 Aᴜᴛᴏᴍᴀᴛᴇᴅ Aᴅs Vɪᴀ @SkullAdsBot ☠️ | @skullmodder"
+                bio="💀 Aᴜᴛᴏᴍᴀᴛᴇᴅ Aᴅs Vɪᴀ @kaixadsbot ✨ | @unrealaura"
             )
         except Exception as e:
             logger.warning(f"Profile update error (non-critical): {e}")
