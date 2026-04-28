@@ -809,7 +809,7 @@ async def send_welcome(msg_or_query, is_edit: bool = False):
     total_users = len(data["users"])
 
     text = (
-        "💀 <b>Sᴋᴜʟʟ Aᴅs Bᴏᴛ v3.0</b>\n\n"
+        "✨ <b>kai Aᴅs Bᴏᴛ v3.0</b>\n\n"
         "┌─────────────────────\n"
         "│ The most powerful Telegram ad\n"
         "│ automation tool is now in your hands.\n"
@@ -826,8 +826,8 @@ async def send_welcome(msg_or_query, is_edit: bool = False):
         "├ 🔑 OTP & 2FA Secure Login\n"
         "├ 📈 Advanced Analytics\n"
         "└ 🔗 Referral System\n\n"
-        "👨‍💻 <b>Group:</b> @brzfire\n"
-        "🤖 <b>Owner:</b> @itsukiarai"
+        "👨‍💻 <b>Group:</b> @thedivinecult\n"
+        "🤖 <b>Owner:</b> @unrealaura"
     )
 
     markup = InlineKeyboardMarkup([
@@ -5889,7 +5889,7 @@ async def health_check_task():
 async def start_bot():
     """Main bot startup function."""
     print("=" * 50)
-    print("💀 SKULL ADS BOT v3.0")
+    print("✨kai ADS BOT v3.0")
     print("=" * 50)
     print(f"📱 API ID: {API_ID}")
     print(f"🤖 Bot: @{BOT_USERNAME}")
